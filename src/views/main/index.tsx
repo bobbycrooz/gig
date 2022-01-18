@@ -36,8 +36,8 @@ const Main = () => {
 
   React.useEffect(() => {
     getAllcountry();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <motion.div
@@ -261,6 +261,7 @@ const AppList = styled.main`
         /* border: 1px solid red; */
         background: ${(props) => props.theme.ele};
         width: 180px;
+        z-index: 999;
         .options {
           cursor: pointer;
         }
