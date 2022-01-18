@@ -1,8 +1,8 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components";
-import { IoMoonSharp, IoSearchSharp } from "react-icons/io5";
-import { BiChevronDown, BiSearch } from "react-icons/bi";
+import { IoSearchSharp } from "react-icons/io5";
+import { BiChevronDown } from "react-icons/bi";
 import {
   getAllCountry,
   filterByContinent,
@@ -140,6 +140,7 @@ function Operations({ getAllcountry }: any) {
 
   async function filterCountries(name: string) {
     const { data } = await filterByContinent(name);
+    return data;
   }
 
   async function searchByNames(e: any, name: string) {

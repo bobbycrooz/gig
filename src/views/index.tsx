@@ -2,7 +2,7 @@ import React from "react";
 import MainApp from "./main";
 import Appdetails from "./Appdetails";
 import styled from "styled-components";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { IoMoonSharp } from "react-icons/io5";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
 import { toggleTheme } from "../redux/themeSlice";

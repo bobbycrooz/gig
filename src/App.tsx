@@ -3,7 +3,7 @@ import MainApp from "./views/";
 import GlobalStyle from "./styles/global";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./styles/themes";
-import { useAppSelector, useAppDispatch } from "./redux/hook";
+import { useAppSelector } from "./redux/hook";
 
 const App = () => {
   const dark = useAppSelector(({ themes }) => themes.dark);

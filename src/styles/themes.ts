@@ -1,5 +1,5 @@
 // my-theme.ts
-import { DefaultTheme } from "styled-components";
+// import { DefaultTheme } from "styled-components";
 
 // export const myTheme: DefaultTheme = {
 //   borderRadius: "5px",
@@ -9,12 +9,6 @@ import { DefaultTheme } from "styled-components";
 //     secondary: "magenta",
 //   },
 // };
-
-const globalTheme = {
-
-
-
-};
 
 export const lightTheme = {
   bgc: "hsl(0, 0%, 98%)",
