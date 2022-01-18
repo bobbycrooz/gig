@@ -23,8 +23,20 @@ const Details = () => {
     return languages;
   }
 
+  const options = {
+    start: { x: "-100px", opacity: 0 },
+    finish: { x: "0px", opacity: 1 },
+    exit: { x: "100px", opacity: 0 },
+  };
+
   return (
-    <motion.div className=" w-full h-auto md:h-screen mt-20">
+    <motion.div
+      initial={{ opacity: 0, x: "100px" }}
+      animate={{ opacity: 1, x: "0", transition: { duration: 0.4 } }}
+      exit={{ opacity: 0, x: "0" }}
+      className=" w-full h-auto md:h-screen mt-20"
+      key={"crooz"}
+    >
       <Section>
         <div onClick={goBack} className="btn_cont ">
           <button className="back btn rounded-sm shadow-md flex items-center">

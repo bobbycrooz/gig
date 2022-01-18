@@ -14,9 +14,9 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 const options = {
-  start: {},
-  finish: {},
-  exit: {},
+  start: { x: "-100px", opacity: 0 },
+  finish: { x: "0px", opacity: 1, transition: { duration: 0.4 } },
+  exit: { x: "100px", opacity: 0 },
 };
 
 const cardsArr = [1, 1, 1, 1, 1, 1, 1, 1];
@@ -39,7 +39,14 @@ const Main = () => {
   }, []);
 
   return (
-    <motion.div className=" w-full h-full mt-11">
+    <motion.div
+      key={"bobby"}
+      initial="start"
+      animate="finish"
+      variants={options}
+      exit="exit"
+      className=" w-full h-full mt-11"
+    >
       {" "}
       <AppList>
         <Operations getAllcountry={getAllcountry} />

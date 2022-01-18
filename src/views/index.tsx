@@ -15,7 +15,7 @@ const View = () => {
   return (
     <App className="bg">
       <Header />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         {showingDetails ? <Appdetails /> : <MainApp />}
       </AnimatePresence>
     </App>
