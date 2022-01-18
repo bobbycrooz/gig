@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { BsArrowLeft } from "react-icons/bs";
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
@@ -14,20 +14,20 @@ const Details = () => {
     dispatch(toggleShowDetails(null));
   }
 
-  function lang() {
-    let languages = `${
-      (currentItem.languages[0].name,
-      currentItem.languages[1].name,
-      currentItem.languages[2].name)
-    }`;
-    return languages;
-  }
+  // function lang() {
+  //   let languages = `${
+  //     (currentItem.languages[0].name,
+  //     currentItem.languages[1].name,
+  //     currentItem.languages[2].name)
+  //   }`;
+  //   return languages;
+  // }
 
-  const options = {
-    start: { x: "-100px", opacity: 0 },
-    finish: { x: "0px", opacity: 1 },
-    exit: { x: "100px", opacity: 0 },
-  };
+  // const options = {
+  //   start: { x: "-100px", opacity: 0 },
+  //   finish: { x: "0px", opacity: 1 },
+  //   exit: { x: "100px", opacity: 0 },
+  // };
 
   return (
     <motion.div
