@@ -36,7 +36,8 @@ const Main = () => {
 
   React.useEffect(() => {
     getAllcountry();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   return (
     <motion.div
